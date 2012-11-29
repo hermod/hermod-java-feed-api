@@ -18,26 +18,28 @@ public interface Contributor
      * @param subject
      * @return
      */
-    boolean requestAuthorizationToPublish(final String subject);
+    boolean askContribution(final String subject);
     
     
+
     /**
-     * publishMsg 
+     * contributeMsg.
      * 
      * @param subject
      * @param writeIntMapMsg
      * @return
      */
-    boolean publishMsg(final String subject, final WriteIntMapMsg writeIntMapMsg);
+    boolean contributeMsg(final String subject, final WriteIntMapMsg writeIntMapMsg);
     
+
     /**
-     * publishPartialMsg
+     * contributePartialMsg.
      * 
      * @param subject
      * @param writeIntMapMsg
      * @return
      */
-    boolean publishPartialMsg(final String subject, final WriteIntMapMsg writeIntMapMsg);
+    boolean contributePartialMsg(final String subject, final WriteIntMapMsg writeIntMapMsg);
     
     
     /**
