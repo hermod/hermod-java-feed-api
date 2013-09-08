@@ -1,4 +1,4 @@
-package com.github.hermod.feed.client;
+package com.github.hermod.feed.subscriber;
 
 /**
  * ErrorListener.
@@ -16,4 +16,5 @@ public interface ErrorListener
      * @return
      */
     boolean onError(final String subject, final String error);
+    //boolean onError(final String error, final String... subjects);
 }

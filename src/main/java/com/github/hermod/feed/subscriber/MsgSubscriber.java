@@ -1,4 +1,4 @@
-package com.github.hermod.feed.client;
+package com.github.hermod.feed.subscriber;
 
 /**
  * Subscriber.
@@ -17,7 +17,10 @@ public interface MsgSubscriber
      * @return
      */
     boolean subscribeMsg(final String subject, final MsgListener msgListener);
-
+    
+    //boolean subscribeMsg(final MsgListener msgListener, final String... subject);
+    //boolean subscribeMsg(final MsgListener msgListener, final String subject, final int... keys);
+    
     //boolean subscribeMsg(final String subject, final MsgListener msgListener, final int... keys);
     
     /**
@@ -60,6 +63,6 @@ public interface MsgSubscriber
      * @param loginPasswordSha1Hash
      * @return
      */
-    boolean logon(final String login, final String loginPasswordSha1Hash);
+    boolean logOn(final String login, final String loginPasswordSha1Hash);
 
 }

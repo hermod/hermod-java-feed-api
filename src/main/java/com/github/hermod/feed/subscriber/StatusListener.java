@@ -1,4 +1,4 @@
-package com.github.hermod.feed.client;
+package com.github.hermod.feed.subscriber;
 
 import com.github.hermod.feed.Status;
 
@@ -18,4 +18,5 @@ public interface StatusListener // extends ErrorListener
      * @return
      */
     boolean onStatus(final String subject, final Status status);
+    //boolean onStatus(final Status status, final String... subject);
 }

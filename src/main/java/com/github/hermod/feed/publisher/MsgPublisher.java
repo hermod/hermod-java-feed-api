@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.github.hermod.feed.server;
+package com.github.hermod.feed.publisher;
 
 import com.github.hermod.feed.Status;
 import com.github.hermod.ser.Msg;
@@ -23,6 +23,7 @@ public interface MsgPublisher
 
     boolean publishMsg(final String aSubject, final Msg aMsg, final boolean isPartialMsg, final Status status);
     
+    //boolean addRequestListener(final String aSubject, final RequestListener requestListener); 
     
 	/**
 	 * publishMsg 

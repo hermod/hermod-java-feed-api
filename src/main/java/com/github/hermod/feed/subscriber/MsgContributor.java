@@ -1,4 +1,4 @@
-package com.github.hermod.feed.client;
+package com.github.hermod.feed.subscriber;
 
 import com.github.hermod.feed.Status;
 import com.github.hermod.ser.Msg;

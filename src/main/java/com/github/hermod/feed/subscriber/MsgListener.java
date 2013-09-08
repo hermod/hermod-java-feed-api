@@ -1,4 +1,4 @@
-package com.github.hermod.feed.client;
+package com.github.hermod.feed.subscriber;
 
 import com.github.hermod.ser.Msg;
 
@@ -13,4 +13,5 @@ public interface MsgListener extends StatusListener, ErrorListener
 {
     //
     boolean onMsg(final String subject, final Msg aMsg, final boolean isPartialMsg, final int... keys);
+    //boolean onMsg(final Msg aMsg, final String subject, final boolean isPartialMsg, final int... keys);
 }

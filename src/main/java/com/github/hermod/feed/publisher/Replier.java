@@ -1,4 +1,4 @@
-package com.github.hermod.feed.server;
+package com.github.hermod.feed.publisher;
 
 /**
  * Replier.
