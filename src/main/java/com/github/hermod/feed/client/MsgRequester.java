@@ -1,13 +1,15 @@
 package com.github.hermod.feed.client;
 
 
+
 /**
  * Requester.
  * 
  * @author anavarro - Nov 27, 2012
  * 
  */
-public interface Requester
+@Deprecated
+public interface MsgRequester
 {
 
     /**
@@ -27,6 +29,6 @@ public interface Requester
      * @param msgListener
      * @return
      */
-    //boolean requestCompute(final String subject, final WriteIntMapMsg param, final MsgListener msgListener);
+    //boolean requestCompute(final String subject, final MsgListener msgListener, final Msg param);
 
 }

@@ -1,7 +1,7 @@
 package com.github.hermod.feed.client;
 
-import com.github.hermod.feed.Status;
-import com.github.hermod.ser.intmap.ReadIntMapMsg;
+import com.github.hermod.ser.Msg;
+
 
 /**
  * MsgListener.
@@ -9,36 +9,8 @@ import com.github.hermod.ser.intmap.ReadIntMapMsg;
  * @author anavarro - Nov 27, 2012
  * 
  */
-public interface MsgListener
+public interface MsgListener extends StatusListener, ErrorListener
 {
-    
-    /**
-     * onMsg.
-     * 
-     * @param subject
-     * @param readIntMapMsg
-     * @return
-     */
-    boolean onMsg(final String subject, final ReadIntMapMsg readIntMapMsg);
-    
-
-    /**
-     * onError.
-     * 
-     * @param subject
-     * @param error
-     * @return
-     */
-    boolean onError(final String subject, final String error);
-    
-    /**
-     * onStatus.
-     * 
-     * @param subject
-     * @param status
-     * @return
-     */
-    boolean onStatus(final String subject, final Status status);
-
-    
+    //
+    boolean onMsg(final String subject, final Msg aMsg, final boolean isPartialMsg, final int... keys);
 }
